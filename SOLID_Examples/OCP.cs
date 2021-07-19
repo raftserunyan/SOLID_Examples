@@ -4,8 +4,9 @@ namespace SOLID_Examples
 {
 	//Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification	
 
-	#region Bad code
+	//Ex: A pianist must be able any music which has notes
 
+	#region Bad code
 	public class PaymentManager
 	{
 		public void Pay(decimal amount, PaymentMode paymentMode)
@@ -32,7 +33,6 @@ namespace SOLID_Examples
 		CreditCard,
 		QIWI
 	}
-
 	#endregion
 
 	#region Good code

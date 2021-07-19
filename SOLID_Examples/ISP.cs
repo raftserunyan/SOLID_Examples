@@ -3,7 +3,12 @@
 namespace SOLID_Examples
 {
 	//Definition: No client should be forced to depend on methods it does not use
-	//Code should not be forced to depend on methods that it doesn't use
+
+	//A car can start, move, upshift and downshift, can be fillen
+	//and a car is a vechile, and it can implement IVechile interface
+	//A bicycle is also a vechile, but it can't implement the IVechile interface
+	//because it can't start, upshift or downshift, can't be fillen
+	//So if bicycle would use that interface, it would have some extra functions and it would violate the ISP
 
 	#region Bad code
 	interface IBook

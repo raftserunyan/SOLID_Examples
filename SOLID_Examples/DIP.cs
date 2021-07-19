@@ -5,6 +5,11 @@ namespace SOLID_Examples
 	//High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces).
 	//Abstractions should not depend on details. Details(concrete implementations) should depend on abstractions.
 
+	//A coffee machine has a water heater, a coffee grinder, a sugar/coffee mixer etc
+	//The coffee machine does not care how the water heater heats the water: with electricity or with flame
+	//the machine just gives the heater an order to heat the water, and then it just 'takes' the heated water
+	//if the next day, we'll change the electrical heater to one that heats by burning something, the coffee machine would still work
+
 	#region Bad code
 	class DatabaseReader
 	{

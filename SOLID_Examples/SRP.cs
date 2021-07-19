@@ -2,6 +2,10 @@
 
 namespace SOLID_Examples
 {
+	//A class should have only one reason to change
+
+	//Ex: the water heater in a coffee machine should not mix sugar in it
+
 	#region Bad Code
 	class Bakery
 	{
@@ -19,7 +23,7 @@ namespace SOLID_Examples
 
 		private void SendEmail(Customer customer, string message)
 		{
-			//Sending an email with this context "Your order is ready"
+			//Sending an email "Your order is ready"
 		}
 
 	}

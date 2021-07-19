@@ -5,6 +5,9 @@ namespace SOLID_Examples
 {
 	//If S is a subtype of T, then objects of type T may be replaced with objects of type S 
 
+	//Ex: Whatever can be started, driven, has 4 wheels, can upshift and downshift is a car, right?
+	//A BMW can do all of these, but a Tesla can't, so wheter a Tesla is not a car, or the definition of a car which's above is not right
+
 	class GearBox
 	{
 		public int CountOfGears { get; set; }
